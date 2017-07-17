@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="mouthpiece.js"></script>
+  <script src="../../openJScad/lightgl.js"></script>
+  <script src="../../openJScad/csg.js"></script>
+  <script src="../../openJScad/openjscad.js"></script>
+  
+  
+  <style>
+
+body {
+  font: 14px/20px 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  margin: 0 auto;
+  padding: 0px;
+}
+
+textarea {
+  width: 780px;
+  height: 200px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+canvas { cursor: move; }
+
+  </style>
+<link rels="stylesheet" href="openjscad.css" type="text/css">
+
+<script>
+
+var gProcessor=null;
+
+// Show all exceptions to the user:
+OpenJsCad.AlertUserOfUncaughtExceptions();
+
+function onload()
+{
+  
+  gProcessor = new OpenJsCad.Processor(document.getElementById("viewer"));
+  updateSolid();
+  
+}
+
+function updateSolid()
+{
+  gProcessor.setJsCad();
+}
+
+
+</script>
+<title>Mouthpiece</title>  
+</head>
+<body onload="onload()">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42895238-2', '3ddoctors.net');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="../UpMenu.JS" type="Text/javascript"></script>
+
+<table cellspacing=0 cellpadding=0 border=2 bordercolor=ffffff bgcolor=BACCff><td colspan=2 background="../bg1.jpg"><center>
+
+<h1>Mouthpiece</h1>
+</td><tr>
+
+<td width="50%" valign="top">
+
+<div id="viewer"></div>
+</td>
+<td valign=top width="50%">
+
+<table cellspacing=0 cellpadding=0 border=0 bordercolor=ffffff bgcolor=BACCff width="100%">
+	<Td colspan=3 bgcolor=EDD99C background="../bg4.jpg"><b>Mouthpiece Parameters:</b></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>
+<Tr>
+
+	<Td colspan=3 bgcolor=BACCff height=2><center><img src="mouthpiece2.png" width="100%"></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>	
+<tr>
+    <Td  background="../bg3.jpg">Outer Diameter:<span style="float:right;"><input id="rOut" value="32" size="2"></span></td>
+	<Td width=2 bgcolor=ffffff></td>
+	<Td  background="../bg3.jpg">Inner Diameter:<span style="float:right;"><input id="rIn" value="28" size="2"></span></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>
+<tr>
+    <Td  background="../bg3.jpg">A:<span style="float:right;"><input id="A" value="18" size="2"></span></td>
+	<Td width=2 bgcolor=ffffff></td>
+	<Td  background="../bg3.jpg">L2:<span style="float:right;"><input id="L2" value="10" size="2"></span></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>
+<tr>
+    <Td  background="../bg3.jpg">L:<span style="float:right;"><input id="L" value="5" size="2"></span></td>
+	<Td width=2 bgcolor=ffffff></td>
+	<Td  background="../bg3.jpg">L3:<span style="float:right;"><input id="L3" value="15" size="2"></span></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>		
+<tr>
+    <Td  background="../bg3.jpg">h:<span style="float:right;"><input id="H" value="8" size="2"></span></td>
+	<Td width=2 bgcolor=ffffff></td>
+	<Td  background="../bg3.jpg">b:<span style="float:right;"><input id="B" value="1.5" size="2"></span></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>	
+<tr>
+    <Td  background="../bg3.jpg">T:<span style="float:right;"><input id="T" value="2" size="2"></span></td>
+	<Td width=2 bgcolor=ffffff></td>
+	<Td  background="../bg3.jpg">width of air:<span style="float:right;"><input id="W" value="20" size="2"></span></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>	
+<tr>
+    <Td  background="../bg3.jpg">Bottom & Top:<span style="float:right;"><input id="Bottom" value="2" size="2"></span></td>
+	<Td  width=2 bgcolor=ffffff></td>
+	<Td  background="../bg3.jpg"><input type="checkbox" id="Mir">Mirrored</td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>	
+<tr>
+	<Td colspan=3 bgcolor=EDD99C background="../bg4.jpg"><b>Connector parameters:</b></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>	
+<tr>
+    <Td  background="../bg3.jpg">Extention height:<span style="float:right;"><input id="Hexten" value="5" size="2"></span></td>
+	<Td width=2 bgcolor=ffffff></td>
+	<Td  background="../bg3.jpg">Connector height:<span style="float:right;"><input id="Hcon" value="20" size="2"></span></td>
+<Tr>
+	<Td colspan=3 bgcolor=ffffff height=2></td>	
+<tr>
+    <Td  background="../bg3.jpg">Connector OD:<span style="float:right;"><input id="Cout" value="32" size="2"></span></td>
+	<Td width=2 bgcolor=ffffff></td>
+	<Td  background="../bg3.jpg">Connector ID:<span style="float:right;"><input id="Cin" value="30" size="2"></span></td>
+<Tr>
+
+
+</table>
+</td>
+<tr>
+<td colspan=2>
+<b>Examples: (click to edit)</b><br><center>
+<script>PutExamples("tubethreadcap",4,4,190); </script></center>
+</td>
+
+
+</table>
+<script src="../Down.JS" type="Text/javascript"></script>
+
+</body>
+</html>

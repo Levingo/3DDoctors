@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <script src="simple.js"></script>
+  <script src="../../openJScad/lightgl.js"></script>
+  <script src="../../openJScad/csg.js"></script>
+  <script src="../../openJScad/openjscad.js"></script>
+
+
+  <style>
+
+body {
+  font: 14px/20px 'Helvetica Neue Light', HelveticaNeue-Light, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  margin: 0 auto;
+  padding: 0px;
+}
+
+textarea {
+  width: 780px;
+  height: 200px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+canvas { cursor: move; }
+
+  </style>
+<link rels="stylesheet" href="openjscad.css" type="text/css">
+
+<script>
+
+var gProcessor=null;
+
+// Show all exceptions to the user:
+OpenJsCad.AlertUserOfUncaughtExceptions();
+
+function onload()
+{
+
+  gProcessor = new OpenJsCad.Processor(document.getElementById("viewer"));
+  updateSolid();
+
+}
+
+function updateSolid()
+{
+  gProcessor.setJsCad();
+}
+
+
+</script>
+<title>Mouthpiece</title>
+</head>
+<body onload="onload()">
+
+<script src="../UpMenu.JS" type="Text/javascript"></script>
+
+<table cellspacing=0 cellpadding=0 border=2 bordercolor=ffffff bgcolor=BACCff><td colspan=2 background="../bg1.jpg"><center>
+
+<h1>Mouthpiece</h1>
+</td><tr>
+
+<td width="50%" valign="top">
+
+<div id="viewer"></div>
+</td>
+</table>
+<script src="../Down.JS" type="Text/javascript"></script>
+
+</body>
+</html>
