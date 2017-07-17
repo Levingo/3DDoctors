@@ -1,0 +1,20 @@
+page.js:
+	menu function 
+	openScene function - center the page - desides what to load on the sides
+	put the website icon
+
+	PutExamples function			  (used only in templates)
+	parametersLoader function		  (used only in templates)
+	share-link box, show and hide functions	  (used only in templates)
+
+menu.css:
+	menu style
+
+list.js:
+	template list 
+	buildLib funcion - thumbnails table
+list.css: 
+	library style - thumbnails table
+
+templates/template.css:
+	style of template page (blue table, viewer buttons)
