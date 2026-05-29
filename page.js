@@ -1,7 +1,7 @@
 document.write('<link rel="icon" type="image/png" href="../../icons/3dd.png">');
 
 function menuline() {
-//document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/'">Object Library</button>');
+document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/'">Object Library</button>');
 //document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/custom.html\'">Custom-made template</button>');
 //document.write('<button type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/whatelse.html\'">What Else Do We Do</button>');
 //document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/aboutus.html\'">About Us</button>');
@@ -19,9 +19,10 @@ function OpenScene(typ) {
  // document.write('<span style="float:right;"><a href="javascript:showpopup()"><img src="..\/icons\/share.png" height=30></a></span>');
 
   
-  document.write('</div><div id="topLeft" style="padding: 9px 0px 0px 0px;"><a href="http:\/\/www.3ddoctors.net"><img src="');
-  if (typ=='template') document.write('../../');
-  document.write('icons/logo4.png" width=200 height=32></a></div>');
+  document.write('</div><div id="topLeft" style="padding: 9px 0px 0px 0px;">')
+		//<a href="http:\/\/www.3ddoctors.net"><img src="');
+  //if (typ=='template') document.write('../../');
+  //document.write('icons/logo4.png" width=200 height=32></a></div>');
 
   document.write('<div id="topRight"> </div>');
 
