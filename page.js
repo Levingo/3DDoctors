@@ -1,10 +1,10 @@
 document.write('<link rel="icon" type="image/png" href="../../icons/3dd.png">');
 
 function menuline() {
-document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/'">Object Library</button>');
-document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/custom.html\'">Custom-made template</button>');
+//document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/'">Object Library</button>');
+//document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/custom.html\'">Custom-made template</button>');
 //document.write('<button type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/whatelse.html\'">What Else Do We Do</button>');
-document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/aboutus.html\'">About Us</button>');
+//document.write('<button class="mbutton" type="button" onclick="top.location.href=\'https://loewinger.art/3DDoctors/aboutus.html\'">About Us</button>');
 
 
 
